@@ -1,6 +1,6 @@
 site_name: 2D Arrays In Java
 nav:
-    - Introduction: index.md
-    - Declaring and Initalizing: DecNInit.md
-    - Examples and Implementation: CodeNLoops.md
+    - Introduction: index.rst
+    - Declaring and Initalizing: DecNInit.rst
+    - Examples and Implementation: CodeNLoops.rst
 theme: readthedocs
