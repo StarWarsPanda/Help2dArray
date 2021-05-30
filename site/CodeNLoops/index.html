@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Examples and Implementation - 2D Arrays In Java</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Examples and Implementation";
+    var mkdocs_page_input_path = "CodeNLoops.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> 2D Arrays In Java</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../DecNInit/">Declaring and Initalizing</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Examples and Implementation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#basic-getting-and-setting">Basic Getting and Setting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#loops">Loops</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#basic-example">Basic example</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">2D Arrays In Java</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Examples and Implementation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="examples-and-implementation">Examples and Implementation</h1>
+<h2 id="basic-getting-and-setting">Basic Getting and Setting</h2>
+<pre><code>int[][] exampleArr = 
+{
+    {1,2,3},
+    {4,5,6},
+    {7,8,9}
+};
+
+System.out.println(exampleArr[0][1]); //Prints &quot;2&quot;
+
+exampleArr[0][1] = 1; //Changes the value at row 1 and column 0
+
+System.out.println(exampleArr[0][1]); //Prints &quot;1&quot;
+</code></pre>
+
+<h2 id="loops">Loops</h2>
+<p>Setting the array</p>
+<pre><code>int[][] exampleArr = new int[3][5];
+
+for(int j = 0;j &lt; exampleArr.length;j++)
+{
+    for(int i = 0;i &lt; exampleArr[j].length;i++)
+    {
+        exampleArr[j][i] = j + 1 * i + 1; //Finds the product of the row and column, offset by one
+    }
+}
+</code></pre>
+
+<p>Printing the array</p>
+<pre><code>//Method that prints out the 2D array
+void print2DArray(int[][] arr)
+{
+    for(int j = 0;j &lt; arr.length;j++)
+    {
+        for(int i = 0;i &lt; arr[j].length;i++)
+        {
+            System.out.print(&quot;[&quot; + arr[j][i] + &quot;]&quot;);
+        }
+        System.out.println(); //Just create a new line for the next column
+    }
+}
+</code></pre>
+
+<h2 id="basic-example">Basic example</h2>
+<pre><code>//Finds and prints out the amount of evens in a 2D array
+int count = 0;
+
+int[][] exampleArr = 
+{
+    {1,2,3},
+    {4,5,6},
+    {7,8,9}
+};
+
+for(int j = 0;j &lt; exampleArr.length;j++)
+{
+    for(int i = 0;i &lt; exampleArr[j].length;i++)
+    {
+        if(exampleArr[j][i]%2 == 0)
+        {
+            count++;
+        }
+    }
+}
+
+System.out.println(count); //In this example, the count will be four
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../DecNInit/" class="btn btn-neutral" title="Declaring and Initalizing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../DecNInit/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
