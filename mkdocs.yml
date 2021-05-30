@@ -1,6 +1,0 @@
-site_name: 2D Arrays In Java
-nav:
-    - Introduction: index.rst
-    - Declaring and Initalizing: DecNInit.rst
-    - Examples and Implementation: CodeNLoops.rst
-theme: readthedocs
