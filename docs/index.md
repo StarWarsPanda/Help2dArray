@@ -1,14 +1,13 @@
-# Welcome to 2D Array Help for Java
+# Welcome to the fun world of 2D Arrays
 
-Extra documentation is found at [Java](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html).
+For furthur documentation from Java: [Class Arrays](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html).
 
-## Visualizing
+## Visualizing a 2D array
 
-Let's first visualize a 2d array.
+Let's start by visualizing the data in a 2d Array
 
-## Project layout
+![A 2D Array](2DArrayVis.png)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+As you can see, it is pretty straightforward. Just make that you notice that the array starts at `[0,0]`.
+
+Now we can continue on to defining and intitalizing 2d arrays.
