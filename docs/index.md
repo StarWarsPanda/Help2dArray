@@ -4,6 +4,8 @@ Extra documentation is found at [Java](https://docs.oracle.com/javase/7/docs/api
 
 ## Visualizing
 
+Let's first visualize a 2d array.
+
 ## Project layout
 
     mkdocs.yml    # The configuration file.
