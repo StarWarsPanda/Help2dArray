@@ -1,5 +1,3 @@
-#Examples and Implementation
-
 ##Basic Getting and Setting
 
 ```
