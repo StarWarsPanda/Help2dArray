@@ -1,5 +1,3 @@
-#Declaring and Initalizing
-
 ## Declaring
 
 Let's declare a 2D array with 3 rows and 5 columns
