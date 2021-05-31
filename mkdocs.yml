@@ -1,4 +1,5 @@
 site_name: Help 2D Array
 nav:
     - Introduction: index.md
+    - Defining and Initalziing: DecNInit.md
 theme: readthedocs
