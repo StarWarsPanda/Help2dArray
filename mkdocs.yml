@@ -3,4 +3,5 @@ nav:
     - Introduction: index.md
     - Defining and Initalziing: DecNInit.md
     - Examples: CodeNLoops.md
+    - Contact: Con.md
 theme: readthedocs
